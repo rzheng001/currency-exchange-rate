@@ -1,0 +1,14 @@
+form[name=ccy-form] {
+	display:flex;
+	width:100%;
+	flex-flow: row wrap;
+}
+.ccy-container { width:45%; }
+#ccy-direction { margin: auto; }
+#ccy-direction.up:after {
+	content: "⇦"
+}
+#ccy-direction.down:after {
+	content: "⇨"
+}
+.note { width:100%; }

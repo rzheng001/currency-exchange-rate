@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title>Currency Exchange Rate</title>
+	<link rel="stylesheet" href="scripts/css/main.css"/>
+	<link rel="stylesheet" media="(min-width:701px)" href="scripts/css/main-lg.css">
+	<link rel="stylesheet" media="(min-width:981px)" href="scripts/css/main-xlg.css">
+</head>
+<body>
+	<div class="content">
+		<header>
+			<h1>Currency Exchange Rate</h1>
+		</header>
+		<section class="body">
+			<form name="ccy-form">
+				<div class="ccy-container">
+					<input name="ccy-input-one" type="text" pattern="^(?!\.+$)[0-9]*\.?[0-9]*$" value="1"/>
+					<select id ="ccy-select-one" class="currency-code-select">
+						<!-- populate options from json file -->
+					</select><span class="note blue ccy-cntry-info"></span>
+				</div>
+				<span id="ccy-direction" class="down"></span>
+				<div class="ccy-container">
+					<input name="ccy-input-two" type="text" pattern="^(?!\.+$)[0-9]*\.?[0-9]*$" value="1"/>
+					<select id="ccy-select-two" class="currency-code-select">
+						<!-- populate options from json file -->
+					</select><span class="note blue ccy-cntry-info"></span>
+				</div>
+				<div id="ccy-meta" class="note"></div> 
+			</form>
+		</section>
+	</div>
+	<footer>
+	<a style="float:right;"href="https://www.yahoo.com/?ilc=401" target="_blank"> <img src="https://poweredby.yahoo.com/white_retina.png" width="134" height="29"/> </a>
+	<p>Copyright &copy; 2016 Richard Zheng. All rights reserved.</p>
+	
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="scripts/js/main.js"></script>
+</body>
+</html>
