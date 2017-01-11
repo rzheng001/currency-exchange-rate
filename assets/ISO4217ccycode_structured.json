@@ -123,14 +123,6 @@
 	    ]
 	  },
 	  {
-	    "Name": "No universal currency",
-	    "Countries": [
-	      "ANTARCTICA",
-	      "PALESTINE, STATE OF",
-	      "SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS"
-	    ]
-	  },
-	  {
 	    "Code": "ARS",
 	    "Name": "Argentine Peso",
 	    "Number": "032",
@@ -1041,15 +1033,6 @@
 	    ]
 	  },
 	  {
-	    "Code": "XUA",
-	    "Name": "ADB Unit of Account",
-	    "Number": "965",
-	    "MnrUnit": "N.A.",
-	    "Countries": [
-	      "MEMBER COUNTRIES OF THE AFRICAN DEVELOPMENT BANK GROUP"
-	    ]
-	  },
-	  {
 	    "Code": "MXN",
 	    "Name": "Mexican Peso",
 	    "Number": "484",
@@ -1333,15 +1316,6 @@
 	    ]
 	  },
 	  {
-	    "Code": "XSU",
-	    "Name": "Sucre",
-	    "Number": "994",
-	    "MnrUnit": "N.A.",
-	    "Countries": [
-	      "SISTEMA UNITARIO DE COMPENSACION REGIONAL DE PAGOS 'SUCRE'"
-	    ]
-	  },
-	  {
 	    "Code": "SBD",
 	    "Name": "Solomon Islands Dollar",
 	    "Number": "090",
@@ -1357,15 +1331,6 @@
 	    "MnrUnit": "2",
 	    "Countries": [
 	      "SOMALIA"
-	    ]
-	  },
-	  {
-	    "Code": "SSP",
-	    "Name": "South Sudanese Pound",
-	    "Number": "728",
-	    "MnrUnit": "2",
-	    "Countries": [
-	      "SOUTH SUDAN"
 	    ]
 	  },
 	  {
@@ -1648,60 +1613,6 @@
 	    "MnrUnit": "2",
 	    "Countries": [
 	      "ZIMBABWE"
-	    ]
-	  },
-	  {
-	    "Code": "XBA",
-	    "Name": "Bond Markets Unit European Composite Unit (EURCO)",
-	    "Number": "955",
-	    "MnrUnit": "N.A.",
-	    "Countries": [
-	      "ZZ01_Bond Markets Unit European_EURCO"
-	    ]
-	  },
-	  {
-	    "Code": "XBB",
-	    "Name": "Bond Markets Unit European Monetary Unit (E.M.U.-6)",
-	    "Number": "956",
-	    "MnrUnit": "N.A.",
-	    "Countries": [
-	      "ZZ02_Bond Markets Unit European_EMU-6"
-	    ]
-	  },
-	  {
-	    "Code": "XBC",
-	    "Name": "Bond Markets Unit European Unit of Account 9 (E.U.A.-9)",
-	    "Number": "957",
-	    "MnrUnit": "N.A.",
-	    "Countries": [
-	      "ZZ03_Bond Markets Unit European_EUA-9"
-	    ]
-	  },
-	  {
-	    "Code": "XBD",
-	    "Name": "Bond Markets Unit European Unit of Account 17 (E.U.A.-17)",
-	    "Number": "958",
-	    "MnrUnit": "N.A.",
-	    "Countries": [
-	      "ZZ04_Bond Markets Unit European_EUA-17"
-	    ]
-	  },
-	  {
-	    "Code": "XTS",
-	    "Name": "Codes specifically reserved for testing purposes",
-	    "Number": "963",
-	    "MnrUnit": "N.A.",
-	    "Countries": [
-	      "ZZ06_Testing_Code"
-	    ]
-	  },
-	  {
-	    "Code": "XXX",
-	    "Name": "The codes assigned for transactions where no currency is involved",
-	    "Number": "999",
-	    "MnrUnit": "N.A.",
-	    "Countries": [
-	      "ZZ07_No_Currency"
 	    ]
 	  },
 	  {
