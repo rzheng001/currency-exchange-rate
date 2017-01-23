@@ -142,8 +142,8 @@ $(document).ready(function() {
 		}
 		// display countries the selected currency is used
 		var ccy = this.value;
-		var ctries = ccyCodes[ccyCodes.findIndex(function(s) {return s.Code == ccy;})].Countries.join("<br>");
-		$(this).next().html("<strong>Used in the following Countries:</strong><hr>" + ctries);
+		var ctries = '- ' + ccyCodes[ccyCodes.findIndex(function(s) {return s.Code == ccy;})].Countries.join("<br> - ");
+		$(this).next().html("<strong>Used in the following Countries:</strong><br>" + ctries);
 		// perform request
 		if (this == domSelectCcyOne[0]) sendRequest(one);
 		else sendRequest(two);

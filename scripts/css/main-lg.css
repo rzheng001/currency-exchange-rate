@@ -6,9 +6,9 @@ form[name=ccy-form] {
 .ccy-container { width:45%; }
 #ccy-direction { margin: auto; }
 #ccy-direction.up:after {
-	content: "⇦"
+	transform: rotate(180deg);
 }
 #ccy-direction.down:after {
-	content: "⇨"
+	transform: rotate(0deg);
 }
 .note { width:100%; }

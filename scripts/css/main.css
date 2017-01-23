@@ -4,6 +4,7 @@
 }
 html {
 	height:100%;
+	min-width:333px;
 }
 body {
 	height:100%;
@@ -14,14 +15,25 @@ html, body {
 }
 header h1 { margin:0; padding: 10px; }
 .content { min-height: 100%; }
-.body { padding: 30px 10px 10px; padding-bottom: 70px; }
+.body { padding: 60px 10px; padding-bottom: 70px; }
+.absolute-center {
+	top: 50%;
+	right: 0;
+	bottom: 0;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
 footer {
+	position: relative;
 	color:#eee;
 	background-color: #000;
 	height:70px;
 	margin-top: -70px;
 	padding:8px;
+	font-size: 14px;
 }
+footer > div { width: 100%; padding:8px; }
 .loader:before {
 	content: "";
 	position: absolute;
@@ -31,7 +43,6 @@ footer {
 	top: 0;
 	right: 0;
 	bottom: 0;
-	border-radius: 3px;
 }
 .loader:after {
 	position: absolute;
@@ -41,7 +52,7 @@ footer {
 	display: inline-block;
 	width:20px;
 	height:20px;
-	border:6px solid #ddd;
+	border:6px solid rgba(0,0,0,0);
 	border-top:6px solid #07c;
 	border-bottom: 6px solid #07c;
 	border-radius:50%;
@@ -51,24 +62,36 @@ footer {
 	0% { transform: translateX(-50%) translateY(-50%) rotate(0deg); }
 	100% { transform: translateX(-50%) translateY(-50%) rotate(360deg); }
 }
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance:textfield;
+}
 input[name=ccy-input-one], input[name=ccy-input-two], select {
 	width:100%;
-	padding:4px;
+	padding:6px;
 	border:1px solid #ccc;
 }
 input[name=ccy-input-one], input[name=ccy-input-two] {
-	border-radius: 3px 3px 0 0;
-	padding-left: 8px;
-	font-size:15pt;
+	padding-left: 12px;
+	font-size:30px;
+	appearance: none;
+}
+select {
+	padding: 6px 4px;
+}
+header {
+	padding: 20px;
+	background-color: #000;
 }
 h1 { 
-	text-align: center; 
-	font-variant: small-caps;
-	background-color:#000;
+	text-align: center;
 	color:#fff;
 }
 .ccy-container {
-	border-radius:3px;
 	position: relative;
 }
 .ccy-container > select {
@@ -77,35 +100,33 @@ h1 {
 }
 #ccy-direction {
 	display: block;
-	color:#f50;
+	color:#5F5F5F;
 	font-weight: 900;
 	background-color:#fff;
 	height:1em;
 	text-align: center;
 	line-height: 1em;
-	margin: 5px 0;
+	margin: 15px 0;
 	cursor: default;
 	position: relative;
 }
 #ccy-direction:after {
 	font-size: 20pt;
+	content: "\279C";
+	display: block;
 }
 #ccy-direction.up:after {
-	content: "⇧"
+	transform: rotate(-90deg);
 }
 #ccy-direction.down:after {
-	content: "⇩"
+	transform: rotate(90deg);
 }
 #ccy-meta { display:none; }
-footer > p {
-	color:gray;
-	font-size:.7em;
-}
 .note {
 	border-left: 4px solid;
 	padding: 4px;
 	padding-left: 6px;
-	margin: 4px 0;
+	margin: 8px 0;
 	display: block;
 }
 .note.red {
@@ -117,20 +138,20 @@ footer > p {
 	border-left-color: rgba(0,255,80,.7);
 }
 .note.blue {
-	background-color: rgba(0,20,70,.2);
-	border-left-color: rgba(0,20,70,.7);
+	background-color: rgba(196, 230, 255, 0.29);
+	border-left-color: rgba(94, 137, 161, 0.4);
 }
 .highlighted {
-	background-color: rgba(255,180,0,.5);
+	background-color: #CCFFDC;
 	transition: .5s;
 }
 .ccy-cntry-info {
-	margin-top:0;
+	margin:0;
 	height:80px;
 	overflow: auto;
-	border-top: 1px solid #ccc;
 	border-right: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #ccc;
 	font-size: 8pt;
 }
 .ccy-cntry-info > strong { 

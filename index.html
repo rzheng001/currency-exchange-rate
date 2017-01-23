@@ -14,14 +14,14 @@
 		<section class="body">
 			<form name="ccy-form">
 				<div class="ccy-container">
-					<input name="ccy-input-one" type="text" pattern="^(?!\.+$)[0-9]*\.?[0-9]*$" value="1"/>
+					<input name="ccy-input-one" input type="number" step="0.01" value="1"/>
 					<select id ="ccy-select-one" class="currency-code-select">
 						<!-- populate options from json file -->
 					</select><span class="note blue ccy-cntry-info"></span>
 				</div>
 				<span id="ccy-direction" class="down"></span>
 				<div class="ccy-container">
-					<input name="ccy-input-two" type="text" pattern="^(?!\.+$)[0-9]*\.?[0-9]*$" value="1"/>
+					<input name="ccy-input-two" input type="number" step="0.01" value="1"/>
 					<select id="ccy-select-two" class="currency-code-select">
 						<!-- populate options from json file -->
 					</select><span class="note blue ccy-cntry-info"></span>
@@ -31,9 +31,10 @@
 		</section>
 	</div>
 	<footer>
-	<a style="float:right;"href="https://www.yahoo.com/?ilc=401" target="_blank"> <img src="https://poweredby.yahoo.com/white_retina.png" width="134" height="29"/> </a>
-	<p>Copyright &copy; 2016 Richard Zheng. All rights reserved.</p>
-	
+	<div class="absolute-center">
+		<a style="float:right;"href="https://www.yahoo.com/?ilc=401" target="_blank"> <img src="https://poweredby.yahoo.com/white_retina.png" width="134" height="29"/> </a>
+		<span>Copyright &copy; 2016 Richard Zheng.</span>
+	</div>
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="scripts/js/main.js"></script>
