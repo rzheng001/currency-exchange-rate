@@ -62,14 +62,17 @@ footer > div { width: 100%; padding:8px; }
 	0% { transform: translateX(-50%) translateY(-50%) rotate(0deg); }
 	100% { transform: translateX(-50%) translateY(-50%) rotate(360deg); }
 }
+input:not(:valid) {
+	background-color: #ff000080;
+	border: 1px solid red;
+	box-shadow: initial;
+}
 input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+    	-webkit-appearance: none;
+    	margin: 0;
 }
-input[type=number] {
-    -moz-appearance:textfield;
-}
+input[type=number] { -moz-appearance:textfield; }
 input[name=ccy-input-one], input[name=ccy-input-two], select {
 	width:100%;
 	padding:6px;
