@@ -114,6 +114,7 @@ h1 {
 	font-size: 20pt;
 	content: "\279C";
 	display: block;
+	transition: .3s ease-in;
 }
 #ccy-direction.up:after {
 	transform: rotate(-90deg);
