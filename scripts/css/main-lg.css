@@ -6,7 +6,7 @@ form[name=ccy-form] {
 .ccy-container { width:45%; }
 #ccy-direction { margin: auto; }
 #ccy-direction.up:after {
-	transform: rotate(180deg);
+	transform: rotate(-180deg);
 }
 #ccy-direction.down:after {
 	transform: rotate(0deg);
